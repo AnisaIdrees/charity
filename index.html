@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="./asset/style.css">
+  <!-- swiper link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- /////// -->
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="
+   sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    .list {
+      /* margin-right: 10px; */
+      border-left: 1px solid rgba(128, 128, 128, 0.233);
+    }
+
+    .list i {
+      padding: 4.5px;
+    }
+
+    .line {
+      padding: 10px;
+      border-left: 1px solid gainsboro;
+      color: rgba(36, 34, 34, 0.89);
+      font-size: 20px;
+    }
+
+    .list:hover {
+      background-color: rgba(0, 0, 0, 0.13);
+      transition: .5s ease-in-out;
+    }
+
+    i {
+      color: rgba(0, 0, 0, 0.644);
+      font-size: 20px;
+    }
+
+    .link-color {
+      font-weight: bold;
+    }
+
+    .link-color:hover {
+      color: rgb(230, 100, 8);
+    }
+
+    .btn-color {
+      background-color: white;
+      color: rgb(230, 100, 8);
+      border: 1.5px solid rgb(230, 100, 8);
+    }
+
+    .btn-color:hover {
+      background-color: rgb(230, 100, 8);
+      color: white;
+      transition: .8s ease-in-out;
+    }
+
+    .dropdown-menu {
+      background-color: black;
+      border-radius: 0;
+    }
+
+    .dropdown-item {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-xxl">
+    <!-- nav 1 -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"
+      style="border-bottom:1px solid  rgba(128, 128, 128, 0.233)">
+      <div class="top-bar container-fluid d-flex ">
+        <div class="d-flex align-items-center">
+          <span class="navbar-text ms-4"><i class="fa-solid fa-phone-flip"></i>
+            Call Us: <strong>+91 1234567890</strong></span>
+        </div>
+        <div class="d-flex align-items-center">
+          <ul class="icons navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-row mb-3 me-4 px-2">
+            <li class="list nav-item">
+              <a class="line nav-link" href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+
+              </a>
+            </li>
+            <li class="list nav-item">
+              <a class="line nav-link" href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list nav-item">
+              <a class="line nav-link" href="#">
+                <i class="fa-brands fa-google-plus-g"></i>
+
+              </a>
+            </li>
+            <li class="list nav-item">
+              <a class="line nav-link" href="#">
+                <i class="fa-brands fa-linkedin-in"></i>
+
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- nav-1 close -->
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body bg-white ms-0 m-3 ">
+      <div class="container-fluid">
+        <span id="foundation" class="text-sm ms-0"><a class="navbar-brand" href="#">
+            <img src="	https://themes.wplook.com/html/charity/assets/images/temp/logo.png" alt="" width="90px"
+              class="ms-0 me-0"></a>| Foundation</span>
+        <button class="navbar-toggler sm-fs-6" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse float-right me-0" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0 d-flex mx-auto gap-3">
+            <li class="nav-item">
+              <a class=" link-color nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="link-color nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                ABOUT US
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">HTML ELEMENTS</a></li>
+                <li><a class="dropdown-item" href="#">404 ERROR PAGES</a></li>
+
+
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="link-color nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                CAUSES
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">SINGEL CAUSE</a></li>
+
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="link-color nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                EVENTS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">SINGEL EVENT</a></li>
+
+
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="link-color nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                BLOGS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="link-color nav-link " aria-current="page" href="#">Contact</a>
+            </li>
+
+
+          </ul>
+          <form class="d-flex" role="search">
+
+            <button class=" btn-color btn btn-outline-warning btn-lg" type="submit">DONATE</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- hero section -->
+
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- //////////////// -->
+        <div class="carousel-item active">
+          <img src="./asset/WhatsApp Image 2024-09-22 at 2.28.29 AM.jpeg" class="d-block w-100" alt="...">
+          <div class="overlay">
+            <div class="writing">
+              <h2 style="font-weight: bold;">Send Childerns To School</h2>
+              <p style="text-transform: uppercase; margin-top: 10px;">"Integer sit amet augue iaculis, ultricies justo
+                nec, commodo nisi.
+                <br>Class taciti sociosqu ad litora torquent per conubia nostra"
+              </p>
+            </div>
+            <div class="table-wala-div">
+              <!-- table -->
+              <table class="overlay2">
+                <tr>
+                  <th>Raised <br>$56,345</th>
+                  <th>To Go <br>$11,56,00</th>
+                </tr>
+                <tr>
+                  <td colspan="2">DONATE NOW</td>
+                </tr>
+              </table>
+            </div>
+            <!-- /////////table wla div close -->
+          </div>
+        </div>
+        <!-- //////////////// -->
+        <div class="carousel-item">
+          <img src="./asset/WhatsApp Image 2024-09-22 at 2.28.29 AM (1).jpeg" class="d-block w-100" alt="...">
+          <div class="dosra-overlay">
+            <h3>WE CAN CHANGE IT <br>TOGETHER LETS DO IT NOW!</h3>
+            <span>_____</span>
+            <p>"Integer sit amet augue iaculis, ultricies justo nec,<br> commodo nisi. Classtaciti sociosqu."</p>
+            <button>LEARN MORE</button>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- hero section end -->
+    <!-- feature causes section -->
+    <div class="zero-section container-xxl">
+      <div class="text">
+        <h1>Featured Causes</h1>
+        <span>______</span>
+        <i class="fa-solid fa-droplet"></i>
+        <span>______</span>
+        <p>Integer sit amet augue iaculis, ultricies justo nec, commodo nisi. Class aptent <br>
+          taciti sociosqu ad litora torquent per conubia nostra.</p>
+      </div>
+      <!-- card -->
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- box -->
+          <div class="swiper-slide">
+            <div class="card-box">
+              <div class="image-box">
+                <img src="./asset/charity two girls.jpeg" alt="">
+              </div>
+              <div class="overlay-opacity"><button>DONATE NOW</button></div>
+              <div class="text-box">
+                <h3>help childs for education</h3>
+                <p>Integer accumsan elit viv erra orem ipsum dolor sit amet, consectetur adipiscing ,
+                  placerat dolor quis, pulvinar velit. Sed auctor lacus eu purus .</p>
+              </div>
+              <div class="progress-box">
+                <form>
+                  <input type="range">
+                  <p><strong>$11,354.00</strong> / $24,400.00</p>
+                  <span>(62%)</span>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- box end -->
+          <!-- box2 -->
+          <div class="swiper-slide">
+            <div class="card-box">
+              <div class="image-box">
+                <img src="./asset/happy boy.jpeg" alt="" class="boy">
+                <div class="urgent">
+                  <P>URGENT</P>
+                </div>
+              </div>
+              <div class="overlay-opacity"><button>DONATE NOW</button></div>
+              <div class="text-box">
+                <h3>give them some foods</h3>
+                <p>Integer accumsan elit viv erra orem ipsum dolor sit amet, consectetur adipiscing ,
+                  placerat dolor quis, pulvinar velit. Sed auctor lacus eu purus .</p>
+              </div>
+              <div class="progress-box">
+                <form>
+                  <input type="range">
+                  <p><strong>$11,354.00</strong> / $24,400.00</p>
+                  <span>(72%)</span>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- box2 end -->
+          <!-- box3 -->
+          <div class="swiper-slide">
+            <div class="card-box">
+              <div class="image-box">
+                <img src="https://img.freepik.com/free-photo/view-kid-practicing-health-wellness-
+                activity_23-2151401995.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721606400&semt=ais_user" alt="">
+              </div>
+              <div class="overlay-opacity"><button>DONATE NOW</button></div>
+              <div class="text-box">
+                <h3>save the child girls</h3>
+                <p>Integer accumsan elit viv erra orem ipsum dolor sit amet, consectetur adipiscing ,
+                  placerat dolor quis, pulvinar velit. Sed auctor lacus eu purus .</p>
+              </div>
+              <div class="progress-box">
+                <form>
+                  <input type="range">
+                  <p><strong>$11,354.00</strong> / $24,400.00</p>
+                  <span>(62%)</span>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- box3 end -->
+          <!-- box4  -->
+          <div class="swiper-slide">
+            <div class="card-box">
+              <div class="image-box">
+                <img src="https://themes.wplook.com/html/charity/assets/images/temp/featured-3.jpg
+                " alt="">
+              </div>
+              <div class="overlay-opacity"><button>DONATE NOW</button></div>
+              <div class="text-box">
+                <h3>help childs for education</h3>
+                <p>Integer accumsan elit viv erra orem ipsum dolor sit amet, consectetur adipiscing ,
+                  placerat dolor quis, pulvinar velit. Sed auctor lacus eu purus .</p>
+              </div>
+              <div class="progress-box">
+                <form>
+                  <input type="range">
+                  <p><strong>$11,354.00</strong> / $24,400.00</p>
+                  <span>(62%)</span>
+                </form>
+              </div>
+            </div>
+            <!-- box4 end -->
+          </div>
+          <div class="swiper-slide">
+            <div class="card-box">
+              <div class="image-box">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEBIWFhUWFRcVFRUVFhUVFRU
+                VFRUWFhUVFxUYHSggGBolGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGBAQGjclHSUtLS0tLS0rKzArLS0tLS0tKy0rLS8tLS0
+                tLS0tLS0tLS0tLy0tLSstLS0tLS0rLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAACAAEDBQYEB//EAD8QAA
+                EDAgQCCAMGBAYCAwAAAAEAAhEDIQQFEjFBUQYTIjJhcYGRobHBI0JSYnLRFCSSshYzguHw8UNTk6LS/8QAGgEBAQEBAQEBAAAAAAAAAAAAAAE
+                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
+                17h4gH6hJJep81Jh+ilNohtVxEzcD9lZZtkbK4bLiC0R4QkkqKo9EvzpJJJof/Z" alt="">
+              </div>
+              <div class="overlay-opacity"><button>DONATE NOW</button></div>
+              <div class="text-box">
+                <h3>lets build some homes</h3>
+                <p>Integer accumsan elit viv erra orem ipsum dolor sit amet, consectetur adipiscing ,
+                  placerat dolor quis, pulvinar velit. Sed auctor lacus eu purus .</p>
+              </div>
+              <div class="progress-box">
+                <form>
+                  <input type="range">
+                  <p><strong>$11,354.00</strong> / $24,400.00</p>
+                  <span>(72%)</span>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-box">
+              <div class="image-box">
+                <img src="./asset/happy boy.jpeg" alt="" Class="boy">
+                <div class="urgent">
+                  <P>URGENT</P>
+                </div>
+              </div>
+              <div class="overlay-opacity"><button>DONATE NOW</button></div>
+              <div class="text-box">
+                <h3>help childs for education</h3>
+                <p>Integer accumsan elit viv erra orem ipsum dolor sit amet, consectetur adipiscing ,
+                  placerat dolor quis, pulvinar velit. Sed auctor lacus eu purus .</p>
+              </div>
+              <div class="progress-box">
+                <form>
+                  <input type="range">
+                  <p><strong>$11,354.00</strong> / $24,400.00</p>
+                  <span>(62%)</span>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-box">
+              <div class="image-box">
+                <img
+                  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSExMVFRUXFRUVFRUWFxcYFxUVFhUWFhUXFxUYHSggGBol
+                HRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lICUtKy0tLS0tLS0tLS0tKy0tLS0tLS0tKy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AA
+                BEIAL8BCAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQIDBgEAB//EAEMQAAIBAgQDBQUGBAUBCQEAAAECEQADBBIhMQVBURMiYXGBBjKRobEUQlLB0fAV
+                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
+                l2/2QT7G4i2uKOZspNtguuWTKkicywYB51rEi7iNSWVV2GZwZMCJNxeR2PLrXyjBYs23W4jQy6iORHPx61suA8cRgxusiMWnvd7MSAMwAIC7ePppW+owPbtfW
+                jOPL2Uv72fQEynZT/sE6eGWqMUv8s9317P/wDPT5edA2GDAHLaIgEHsSwYEDUQ2tV8QcquiKRPKw+nU5lbu6TXNnH+bQ7kybnehvwu6Gtqe0XYcyeXjcP0oxwO
+                
+                o9FH5zSPg+IBsp3xPZodb7SO6PuRA+vXWjhfEFg4P/rN9Imh3D5MuLXBfsDt/LvKQT3wVIywSQMwMIoLbH6k0eHY82+n/wBlKuIX8yTnQiQY7e5BIYECDoNv71K
+                1ibcDKi67HsGAafEnvDxojjaTBTWm1/cKxBJBWTrygn5dpWB4tihnYlRlAzTmI95pAAbns0jkRqTrW9Xs4DMq5iYgqqjlHvkCSTA8RWV9osDhlFwC13lPehoKsYYD
+                uuQZzDQAaZobuwWukWmwHUpPRD2Ztx2kEt/hksofWQxAGokBSuxI186Y4mzvmBgghpzDSJmST5+ld4airZQKmWUUkKj5ZygaEkkjoSfXSrbkQd/Dunfl86q73bZuMTUpMwqWnuBcqzDSCikiTA22gaR0gVqGbKMqyFAjLlfQDYV1ryTIvAdkq5xB92JPdBCsddYUir8ZfRspnMCBtmZZ2JEHY/rR8rb0AnXfQsF/LodtgSuUc/eMH4+NSN/y9D/01G+FOnd/2n60Jmy6a8gD3tOWo1J5a1SSZh7TLL5naB45gdOkZdapXE97Lzgn7sb+VQOIB0n5mqzcH7zfrW0jOy+6x3BA02kH120NUW8RmmM2hg+5vH0rxvA8/rVTR69dfzNWkVstcz1/9leoQ3jtJ38I8N69WtEFMeHzqSL5/KuCyfD517L5UwZLBXnf57a/lVTEcoPxq60I/f70qiFiP+4NXrcH7U1RJrsnx+VUTQScTEaQeXdOuo+lEYe4oEQ/oVA+A/OgbJnczzEz06DTmaLtttqB5CsNFo5xLFqbZUKQSRJLZttRMeIFZslRsQP9P61oMXdBPLToIoXsxI0HM/D/AJokdkVV9xl7IcTZRcTM8SpGS1m1IykGFMaKsbc6H9oUN26W1mFBzAakKBosDLtHpReAbstdZMbMRttt6/GqMW3fbz6k/OhSl6jpBbyV6SQmbh7eHppUrPDXMHKPVv0FMWuQCegP0ppw20G3J6KABrp1O3Ki1fFbATyp6RouBFUsKqkADcPdykcyMqAACTyH5miL18ZSA9kaTDXn08BEmaEw2LNsZFzATOgtk+MlvXrsKsfjFwKSWcAwIAt7xqYI8IrlUqdN/wCTrrXBJ/X1/sv4JdulQCXiW2NrKO8eurdZ5685p1bDDWWHM/4Z9Zjx2rH8DxZYuQLQ7xjOhbkskAaLqSdDqZ0pumPaNTbOsaWzAjXTvTWM2N8n4J09T6a3sNvX2YMGu8tZKL1/p08qAw+OA7rET17RpZJ0hVMQNV/0+NU3ce4MBk0mItmRPr5UqxPEMtzMbh194ouUwNI10O4+FEjG2tA7tS9/Q24j7W2rbG2RqNzkJOuvvNrz5VnOK8Rs3QWVSSSJAzLJ2BbTcdaMxkOA8GOpjUQKCZB0o+KZldhbI3y2xrw7itsoAwOoUQXZACAANhAUDNprOnpdfxyfiHXQXD8JpCbQ6H41c91SoBzlpgydPCAIqqxLe0Mxl2u5LFe1AXuqjbk923Akksdz1JodeOm4ZdGMaaprHUBT3j+nlVN62Oh+P96pKjof360dTOhKm1Ww84xTsBz5H6SfrVD3V6D/AGmhWfXUkD0Op09K8zqOZqcdFOtlouCZ+QkT+lda8PD13oVridT86i1xfH6/Wr0VsLW6B46cia8bw8PjQgujqfnUWujlM/H61fEmy928R8a9VSMY3+VeqFH/2Q=="
+                  alt="">
+              </div>
+              <div class="overlay-opacity"><button>DONATE NOW</button></div>
+              <div class="text-box">
+                <h3>help childs for education</h3>
+                <p>Integer accumsan elit viv erra orem ipsum dolor sit amet, consectetur adipiscing ,
+                  placerat dolor quis, pulvinar velit. Sed auctor lacus eu purus .</p>
+              </div>
+              <div class="progress-box">
+                <form>
+                  <input type="range">
+                  <p><strong>$11,354.00</strong> / $24,400.00</p>
+                  <span>(80%)</span>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-box">
+              <div class="image-box">
+                <img src="./asset/charity two girls.jpeg" alt="">
+              </div>
+              <div class="overlay-opacity"><button>DONATE NOW</button></div>
+              <div class="text-box">
+                <h3>help childs for education</h3>
+                <p>Integer accumsan elit viv erra orem ipsum dolor sit amet, consectetur adipiscing ,
+                  placerat dolor quis, pulvinar velit. Sed auctor lacus eu purus .</p>
+              </div>
+              <div class="progress-box">
+                <form>
+                  <input type="range">
+                  <p><strong>$11,354.00</strong> / $24,400.00</p>
+                  <span>(72%)</span>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-box">
+              <div class="image-box">
+                <img src="./asset/happy boy.jpeg" alt="" class="boy">
+                <div class="urgent">
+                  <P>URGENT</P>
+                </div>
+              </div>
+              <div class="overlay-opacity"><button>DONATE NOW</button></div>
+              <div class="text-box">
+                <h3>help childs for education</h3>
+                <p>Integer accumsan elit viv erra orem ipsum dolor sit amet, consectetur adipiscing ,
+                  placerat dolor quis, pulvinar velit. Sed auctor lacus eu purus .</p>
+              </div>
+              <div class="progress-box">
+                <form>
+                  <input type="range">
+                  <p><strong>$11,354.00</strong> / $24,400.00</p>
+                  <span>(52%)</span>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+
+      <!-- card end -->
+    </div>
+    <!-- feature causes end -->
+    <!-- coloumn wla container -->
+    <div class="coloumn container-xxl">
+      <div class="main-dabba">
+        <div class="baccha1">
+          <h4>Featured News</h4>
+          <span>______</span>
+          <!-- slide -->
+
+          <div class="img-or-text-div">
+            <div class="image">
+              <img src="https://themes.wplook.com/html/charity/assets/images/temp/news-image.jpg" alt="">
+              <!-- side bar -->
+              <div class="slide-bar">
+                <span>
+                  <i class="far fa-folder-open"></i> International
+                </span>
+
+                <span>
+                  <i class="far fa-calendar-alt"></i> May 7, 2018
+                </span>
+              </div>
+            </div>
+            <div class="text-div" style="width: 270px;height: 175px;">
+              <h5>Organized Food Camp for Children</h5>
+              <p>
+              In over under beast seed He. Thing Second stars green there gathering living.
+              Without greater image moving living signs fruit above heaven. Hath, behold isn't Day.</p>
+            </div>
+            <!-- img or div close -->
+          </div>
+          <!-- ///////// -->
+          <!-- latest news start -->
+          <div class="latest-news-div">
+            <h5>latest news</h5>
+          </div>
+          <div class="box-parent">
+            <ul style="list-style-type: none;">
+              <li>
+                <div class="sub-mom">
+                  <div class="child1">
+                    <img src="https://themes.wplook.com/html/charity/assets/images/temp/latest-news-1.jpg" alt="">
+                  </div>
+                  <div class="child2">
+                    <h5><a href="">Pizza Treat Given to Children</a></h5><span> May 7, 2018</span>
+                  </div>
+              </li>
+
+              <li>
+                <div class="sub-mom2">
+                  <div class="child1">
+                    <img src="https://themes.wplook.com/html/charity/assets/images/temp/latest-news-2.jpg" alt="">
+                  </div>
+                  <div class="child2">
+                    <h5><a href="">Day With Childs from Africa</a></h5><span> May 7, 2018</span>
+                  </div>
+              </li>
+          </div>
+          </ul>
+        </div>
+        <!-- latest news end -->
+
+
+        <!-- baccha 2 -->
+        <div class="baccha2">
+          <header class="head-section">
+            <div class="text-section">
+              <h4>Upcoming Event</h4><span>______</span>
+            </div>
+            <div class="button-section"><button><i class="fa-brands fa-facebook-f"></i>facebook page</button></div>
+          </header>
+          
+            <!-- <div class="image-box" style="margin-top:35px;">
+              <a href=""><img src="https://themes.wplook.com/html/charity/assets/images/temp/upcoming-event.jpg"
+                  alt=""></a>
+            </div>
+
+            
+
+            <h4>jls</h4> -->
+            <div class="guitar-img-box">
+              <a href=""><img src="./upcoming-event.jpg" alt=""class="guitar-img"></a>
+            </div>
+            
+            <div class="content-box">
+              <h5>Organizing Music Event To Get Good Donation</h5>
+              
+                <span>
+                  <i class="far fa-user-circle"></i> Admin
+                </span>
+
+                <span>
+                  <i class="far fa-calendar-alt"></i> May 7, 2018 at 2:00 PM
+                </span>
+
+                <span>
+                  <i class="fas fa-map-marker-alt"></i> Montreal, QC.
+                </span>
+                <p>Donec varius ultrices purus. Nullam sit amet sapien tortor. Aenean tincidunt inte rdum felis, vel placerat purus porta nec.</p>
+            </div>
+          <!-- ////////////////// -->
+        </div>
+        <!-- baccha2 end -->
+
+        <!-- maindaaba end -->
+      </div>
+      <!-- </div> -->
+      <!-- ///// -->
+    </div>
+    <!-- coloumn wla container end -->
+
+
+
+
+
+    <!-- main web closing div ^^^-->
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./app.js"></script>https://themes.wplook.com/html/charity/index.html#
+</body>
+
+</html>
